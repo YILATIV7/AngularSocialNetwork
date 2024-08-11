@@ -1,0 +1,9 @@
+<div
+  class="profile-item"
+  *ngFor="let profile of profiles"
+>
+  <p>Профіль №{{profile.id}}</p>
+  <span> {{profile.first_name}} {{profile.last_name}}</span><br>
+  <span>Email: {{profile.email}}</span><br>
+  <img ngSrc="{{profile.avatar}}" alt="" width="96" height="96"/>
+</div>
